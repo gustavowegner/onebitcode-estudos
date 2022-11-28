@@ -1,0 +1,17 @@
+@mixin textx-style($color, $font-size, $font-family){
+    color: $color;
+    font-size: $font-size;
+    font-family: $font-family;
+}
+
+$primary-color: #ff4043;
+
+.texts{
+    h1{
+        @include textx-style($primary-color, 34px, Arial);
+    }
+
+    p{
+        @include textx-style(blue, 22px, Sans-serif);
+    }
+}
